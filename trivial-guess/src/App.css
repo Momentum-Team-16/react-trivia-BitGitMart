@@ -18,6 +18,13 @@ h1 {
   font-size: 40px; 
 }
 
+.qtitle {
+  color: #723528; 
+  text-decoration: underline 2px;
+  padding: 20px; 
+  margin: 20px; 
+}
+
 .boop {
   background-color: yellow; 
   color: black; 

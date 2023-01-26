@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react'; 
 import axios from 'axios'; 
+import { he } from 'he'; // might use this later 
 
 function App() {
   return (
@@ -56,20 +57,20 @@ if (selectedCategory) {
   
   return (
     <>
-     {question.map((q) =>
+     {question && question.map((q) =>
 
 (
 <div>
-<h1 key={selectedCategory}>{q[0].replace('&quot;','"').replace('&quot;','"')}</h1>
+<h1 className="qtitle" key={selectedCategory}>{q[0].replace('&quot;','"').replace('&quot;','"').replace('&#039;', "'")}</h1>
 
 <ul className='questions'>
-<li className='category'>{q[1][0]}</li>
+<li className='category'><button>{q[1][0]}</button></li>
 <br/> 
-<li className='category'>{q[1][1]}</li>
+<li className='category'><button>{q[1][1]}</button></li>
 <br/> 
-<li className='category'>{q[1][2]}</li>
+<li className='category'><button>{q[1][2]}</button></li>
 <br/>
-<li className='category'>{q[2]}</li>
+<li className='category'><button>{q[2]}</button></li>
 </ul>
 
 </div>)
