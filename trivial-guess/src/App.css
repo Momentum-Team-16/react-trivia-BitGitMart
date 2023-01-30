@@ -7,43 +7,46 @@ body {
   color: #002070; 
 }
 
-.Cats-the-musical {
+.silly {
+  background-color: yellow;
+  height: 40px, 20px; 
+  padding: 20px; 
+  margin: 20px; 
+  display: column; 
   text-align: center;
-  margin: 50px; 
+  margin: 20px; 
   font-size: 25px; 
 }
 
-h1 {
-  text-align: center; 
-  font-size: 40px; 
+.answerz {
+  background-color: goldenrod;
+  align-items: center; 
+  width: 1800px; 
+  margin: 50px; 
+  padding: 20px; 
 }
 
-.qtitle {
+.bop {
+  background-color: darkblue; 
+  color: white; 
+  width: 180px; 
+  height: 90px; 
+  border: 2px solid red; 
+  border-radius: 50%; 
+  display: inline-block; 
+}
+
+.title {
+  text-align: center; 
+  font-size: 90px; 
+}
+
+h1 {
+  font-size: 40px; 
+}
+.question {
   color: #723528; 
   text-decoration: underline 2px;
   padding: 20px; 
   margin: 20px; 
-}
-
-.boop {
-  background-color: yellow; 
-  color: black; 
-  height: 40px, 20px; 
-  padding: 20px; 
-  margin: 20px; 
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
